@@ -16,6 +16,14 @@
 
 //Code here
 
+var me = {
+  name: "Trevor",
+  age: 24
+};
+
+alert(me.age);
+
+
 
 
 ////////// PROBLEM 2 //////////
@@ -27,6 +35,15 @@
 
 //Code here
 
+var favoriteThings = {
+  band: "21 savage",
+  food: "Steak",
+  person: "My mom",
+  book: "Algorithms - Cormen",
+  movie: "Forrest Gump",
+  holiday: "Thanksgiving"
+};
+
 
 
 /*
@@ -35,6 +52,9 @@
 
 //Code here
 
+favoriteThings.car = "Tesla";
+favoriteThings.brand = "Polo";
+
 
 
 /*
@@ -42,6 +62,9 @@
 */
 
 //Code here
+
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 
@@ -57,6 +80,9 @@
 
 //Code here
 
+var backPack = {};
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
 
 
 /*
@@ -65,7 +91,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +101,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -98,7 +124,8 @@ var user2 = {
 
 //Code Here
 
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
 
@@ -110,7 +137,7 @@ var user2 = {
 
 //Code Here
 
-
+var methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -119,7 +146,8 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello = function() { alert('hello'); };
+methodCollection.logHello = function() { console.log('hello'); };
 
 /*
   Now call your alertHello and logHello methods.
@@ -127,7 +155,8 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 ////////// PROBLEM 6 //////////
 
@@ -138,6 +167,13 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday, ssn) {
+  return {
+    name,
+    birthday,
+    ssn
+  };
+};
 
 
 ////////// PROBLEM 7 //////////
@@ -149,4 +185,10 @@ var user2 = {
 
 //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber,
+    expirationDate,
+    securityCode
+  };
+};
